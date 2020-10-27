@@ -4,9 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace CustomListRound2
 {
-    class CustomList
+    public class CustomList<T>
     {
+        public void Add(T item)
+        {
+
+        }
+
+        public void Remove(T item)
+        {
+
+        }
     }
 }

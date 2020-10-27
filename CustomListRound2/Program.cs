@@ -10,6 +10,8 @@ namespace CustomListRound2
     {
         static void Main(string[] args)
         {
+            CustomList<int> test1 = new CustomList<int>();
+            test1.Remove
         }
     }
 }
