@@ -1,0 +1,7 @@
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListRound2\bin\Debug\CustomListRound2.exe.config
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListRound2\bin\Debug\CustomListRound2.exe
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListRound2\bin\Debug\CustomListRound2.pdb
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListRound2\obj\Debug\CustomListRound2.csprojAssemblyReference.cache
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListRound2\obj\Debug\CustomListRound2.csproj.CoreCompileInputs.cache
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListRound2\obj\Debug\CustomListRound2.exe
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListRound2\obj\Debug\CustomListRound2.pdb

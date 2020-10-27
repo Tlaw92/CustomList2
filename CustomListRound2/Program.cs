@@ -11,7 +11,15 @@ namespace CustomListRound2
         static void Main(string[] args)
         {
             CustomList<int> test1 = new CustomList<int>();
-            test1.Remove
+            test1.Add(1);
+            test1.Add(2);
+            test1.Add(3);
+            test1.Add(4);
+            test1.Add(5);
+
+
+            test1.Remove(5);
+               
         }
     }
 }

@@ -107,23 +107,7 @@ namespace CustomListUnitTestProject
         }
 
         // how does the Capacity change as you add things? (starts at 4, and doubles)
-        [TestMethod]
-        public void Add_AddItemToEmptyList_ItemGoesToZeroIndexx()
-        {
-            //Arrange
-            CustomList<int> testList = new CustomList<int>();
-            int item = 1;
-            int expected = 1;
-            int actual;
-
-            //Act
-            testList.Add(item);
-            actual = testList[0];
-
-            //Assert
-            Assert.AreEqual(expected, actual);
-
-        }
+        
         // REMOVE TESTS:
 
         [TestMethod]
@@ -186,14 +170,42 @@ namespace CustomListUnitTestProject
         //Make a test to check a bool
         //if it finds something to remove return true
         //vicce versa
-
+        [TestMethod]
+        public void Remove_RemoveItemFromList_CheckBoolTrueIfRemovableIsFound()
+        {
+            //Arrange
+            CustomList<int> testList = new CustomList<int>();
+            bool expected = true;
+            bool actual;
 
             //Act
-    
+            testList.Add(1);
+            testList.Add(2);
+            testList.Add(3);
 
+            actual = testList.Remove(3);
+            
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void Remove_RemoveItemFromList_CheckBoolFalseIfRemovableIsNotFound()
+        {
+            //Arrange
+            CustomList<int> testList = new CustomList<int>();
+            bool expected = false;
+            bool actual;
+
+            //Act
+            testList.Add(1);
+            testList.Add(2);
+
+            actual = testList.Remove(3);
 
             //Assert
-            //Assert.AreEqual(expected, actual);
-        
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 }

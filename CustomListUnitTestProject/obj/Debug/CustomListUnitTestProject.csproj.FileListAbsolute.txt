@@ -1,0 +1,17 @@
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListUnitTestProject\obj\Debug\CustomListUnitTestProject.csprojAssemblyReference.cache
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListUnitTestProject\obj\Debug\CustomListUnitTestProject.csproj.CoreCompileInputs.cache
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListUnitTestProject\bin\Debug\CustomListUnitTestProject.dll
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListUnitTestProject\bin\Debug\CustomListUnitTestProject.pdb
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListUnitTestProject\bin\Debug\CustomListRound2.exe
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListUnitTestProject\bin\Debug\CustomListRound2.pdb
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListUnitTestProject\bin\Debug\CustomListRound2.exe.config
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListUnitTestProject\obj\Debug\CustomListUnitTestProject.csproj.CopyComplete
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListUnitTestProject\obj\Debug\CustomListUnitTestProject.dll
+C:\Users\TLaw\Documents\DCC2\Week4\CustomListRound2\CustomListUnitTestProject\obj\Debug\CustomListUnitTestProject.pdb
