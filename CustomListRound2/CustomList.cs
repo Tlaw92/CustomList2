@@ -1,13 +1,15 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 
 namespace CustomListRound2
 {
-    public class CustomList<T>
+    public class CustomList<T> : IEnumerable
     {
         //member variables(has a)
         int count;
@@ -43,15 +45,22 @@ namespace CustomListRound2
             }
         }
 
-        
-
         //constructor
         public CustomList()
         {
             capacity = 4;
-            items = new T[capacity];
             count = 0;
-            
+            items = new T[capacity];
+        }
+
+        //methods
+
+        public IEnumerator GetEnumerator()
+        {
+            for (int index = 0; index < count; index++)
+            {
+                yield return items[index];
+            }
         }
 
 
@@ -94,6 +103,12 @@ namespace CustomListRound2
             }
             items = temporaryArray;
             return foundItem;
+        }
+
+        public void ToString()
+        {
+            T[] temporaryArray = new T[capacity];
+
         }
     }
 }

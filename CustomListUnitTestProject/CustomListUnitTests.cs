@@ -207,5 +207,54 @@ namespace CustomListUnitTestProject
             Assert.AreEqual(expected, actual);
         }
 
+        ////To String Test
+      
+        [TestMethod]
+        public void ToString_ConvertToString_ConvertThreeIntsToToString()
+        {
+            //arrange
+            CustomList<int> testList = new CustomList<int>();
+            string expected = ("123");
+            string actual;
+            //act
+            testList.Add(1);
+            testList.Add(2);
+            testList.Add(3);
+
+            actual = testList.ToString();
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void ToString_ConvertToString_ConvertDoubleToToString()
+        {
+            //arrange
+            CustomList<double> testList = new CustomList<double>();
+            string expected = "10.20";
+            double actual;
+
+            //act
+            testList.Add(10.20);
+
+            actual = testList.ToString();
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void ToString_ConvertBoolToString_ConvertTrueToToString()
+        {
+            //arrange
+            CustomList<bool> testList = new CustomList<bool>();
+            string expected = ("true");
+            string actual;
+            //act
+            testList.Add(true);
+
+            actual = testList.ToString();
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
