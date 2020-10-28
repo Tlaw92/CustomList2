@@ -16,7 +16,7 @@ namespace CustomListRound2
 
         //properties for count and capacity
         public int Count { get { return count; } }
-        public int Capacity { get { return capacity; } }
+        //public int Capacity { get { return capacity; } }
 
         //Indexer
         public T this[int index]
@@ -71,9 +71,29 @@ namespace CustomListRound2
             count++;
         }
 
-        public void Remove(T itemToRemove)
+        public bool Remove(T itemToRemove)
         {
             bool foundItem = false;
+            T[] temporaryArray = new T[capacity];
+            for (int i = 0, j = 0; i < count; i++, j++)
+            {
+                if (items[i].Equals(itemToRemove) && foundItem == false)
+                {
+                    foundItem = true;
+
+                    j--;
+                }
+                else
+                {
+                    temporaryArray[j] = items[i];
+                }
+            }
+            if (foundItem == true)
+            {
+                count--;
+            }
+            items = temporaryArray;
+            return foundItem;
         }
     }
 }

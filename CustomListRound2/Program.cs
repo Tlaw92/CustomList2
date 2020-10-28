@@ -17,9 +17,10 @@ namespace CustomListRound2
             test1.Add(4);
             test1.Add(5);
 
-
-            test1.Remove(5);
-               
+            Console.WriteLine(test1.Count); 
+            test1.Remove(2);
+            Console.WriteLine(test1.Count);
+            Console.ReadLine();
         }
     }
 }
