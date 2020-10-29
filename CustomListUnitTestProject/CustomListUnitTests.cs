@@ -232,7 +232,7 @@ namespace CustomListUnitTestProject
             //arrange
             CustomList<double> testList = new CustomList<double>();
             string expected = "10.20";
-            double actual;
+            string actual;
 
             //act
             testList.Add(10.20);
@@ -267,20 +267,25 @@ namespace CustomListUnitTestProject
             CustomList<string> testList2 = new CustomList<string>();
             CustomList<string> expected = new CustomList<string>();
             CustomList<string> actual;
+
             //act
             string string1 = "Hello world";
             string string2 = "hows it going?";
+
             expected.Add(string1);
             expected.Add(string2);
+
             testList.Add(string1);
             testList2.Add(string2);
+
             actual = testList + testList2;
+
             //assert
             Assert.AreEqual(expected.ToString(), actual.ToString());
         }
 
         [TestMethod]
-        public void AddOperator_OverloadAddOperator_AddTwoInstancesOfListTogetherChangeThis()
+        public void AddOperator_OverloadAddOperator_AddTwoInstancesOfListTogetherWithMoreInOneThanOtherLol()
         {
             //arrange
             CustomList<string> testList = new CustomList<string>();

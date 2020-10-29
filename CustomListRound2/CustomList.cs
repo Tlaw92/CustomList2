@@ -18,7 +18,7 @@ namespace CustomListRound2
 
         //properties for count and capacity
         public int Count { get { return count; } }
-        //public int Capacity { get { return capacity; } }
+        public int Capacity { get { return capacity; } }
 
         //Indexer
         public T this[int index]
@@ -114,6 +114,43 @@ namespace CustomListRound2
             return builder.ToString();
         }
 
+        public static CustomList<T> operator +(CustomList<T> A, CustomList<T> B)
+        {
+            CustomList<T> items2 = new CustomList<T>();
+            for (int i = 0; i < A.Count; i++)
+            {
+                items2.Add(A[i]);
+            }
+            for (int i = 0; i < B.Count; i++)
+            {
+                items2.Add(B[i]);
+            }
+            return items2;
+        }
 
+        public static CustomList<T> operator -(CustomList<T> A, CustomList<T> B)
+        {
+            CustomList<T> items2 = new CustomList<T>();
+            for (int i = 0; i < A.Count; i++)
+            {
+                items2.Add(A[i]);
+            }
+            for (int i = 0; i < B.Count; i++)
+            {
+                items2.Remove(B[i]);
+            }
+            return items2;
+        }
+
+        public static CustomList<T> Zipper(CustomList<T> A, CustomList<T> B)
+        {
+            CustomList<T> items3 = new CustomList<T>();
+            for (int i = 0; i < A.Count; i++)
+            {
+                items3.Add(A[i]);
+                items3.Add(B[i]);
+            }
+            return items3;
+        }
     }
 }
