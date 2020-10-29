@@ -105,10 +105,16 @@ namespace CustomListRound2
             return foundItem;
         }
 
-        public void ToString()
-        {
-            T[] temporaryArray = new T[capacity];
 
+        public override string ToString()
+        {
+            StringBuilder builder = new StringBuilder();
+            for (int i = 0; i < count; i++)
+            {
+                builder.Append(items[i].ToString());
+            }
+
+            return builder.ToString();
         }
     }
 }

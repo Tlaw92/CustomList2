@@ -247,7 +247,7 @@ namespace CustomListUnitTestProject
         {
             //arrange
             CustomList<bool> testList = new CustomList<bool>();
-            string expected = ("true");
+            string expected = "true";
             string actual;
             //act
             testList.Add(true);
