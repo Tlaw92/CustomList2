@@ -7,7 +7,7 @@ namespace CustomListUnitTestProject
     [TestClass]
     public class CustomListUnitTests
     {
-   
+
 
         [TestMethod]
         public void Add_AddItemToEmptyList_ItemGoesToZeroIndex()
@@ -107,7 +107,7 @@ namespace CustomListUnitTestProject
         }
 
         // how does the Capacity change as you add things? (starts at 4, and doubles)
-        
+
         // REMOVE TESTS:
 
         [TestMethod]
@@ -184,7 +184,7 @@ namespace CustomListUnitTestProject
             testList.Add(3);
 
             actual = testList.Remove(3);
-            
+
             //Assert
             Assert.AreEqual(expected, actual);
         }
@@ -208,7 +208,7 @@ namespace CustomListUnitTestProject
         }
 
         ////To String Test
-      
+
         [TestMethod]
         public void ToString_ConvertToString_ConvertThreeIntsToToString()
         {
@@ -249,12 +249,68 @@ namespace CustomListUnitTestProject
             CustomList<bool> testList = new CustomList<bool>();
             string expected = "true";
             string actual;
+
             //act
             testList.Add(true);
-
             actual = testList.ToString();
+
             //assert
             Assert.AreEqual(expected, actual);
         }
+
+        // + Operator
+        [TestMethod]
+        public void AddOperator_OverloadAddOperator_AddTwoStringsToList()
+        {
+            //arrange
+            CustomList<string> testList = new CustomList<string>();
+            CustomList<string> testList2 = new CustomList<string>();
+            CustomList<string> expected = new CustomList<string>();
+            CustomList<string> actual;
+            //act
+            string string1 = "Hello world";
+            string string2 = "hows it going?";
+            expected.Add(string1);
+            expected.Add(string2);
+            testList.Add(string1);
+            testList2.Add(string2);
+            actual = testList + testList2;
+            //assert
+            Assert.AreEqual(expected.ToString(), actual.ToString());
+        }
+
+        [TestMethod]
+        public void AddOperator_OverloadAddOperator_AddTwoInstancesOfListTogetherChangeThis()
+        {
+            //arrange
+            CustomList<string> testList = new CustomList<string>();
+            CustomList<string> testList2 = new CustomList<string>();
+            CustomList<string> expected = new CustomList<string>();
+            CustomList<string> actual;
+
+            //act
+            string string1 = "This will go in testList1";
+            string string2 = "But this will go in testList2";
+            string string3 = "and so will this";
+            string string4 = "and this will also";
+
+            expected.Add(string1);
+            expected.Add(string2);
+            expected.Add(string3);
+            expected.Add(string4);
+
+            testList.Add(string1);
+            testList2.Add(string2);
+            testList2.Add(string3);
+            testList2.Add(string4);
+
+            actual = testList + testList2;
+
+            //assert
+            Assert.AreEqual(expected.ToString(), actual.ToString());
+        }
+
+
+
     }
 }

@@ -34,7 +34,6 @@ namespace CustomListRound2
                 {
                     throw new IndexOutOfRangeException();
                 }
-
             }
             set
             {
@@ -62,7 +61,6 @@ namespace CustomListRound2
                 yield return items[index];
             }
         }
-
 
         public void Add(T itemToAdd)
         {
@@ -105,7 +103,6 @@ namespace CustomListRound2
             return foundItem;
         }
 
-
         public override string ToString()
         {
             StringBuilder builder = new StringBuilder();
@@ -116,5 +113,7 @@ namespace CustomListRound2
 
             return builder.ToString();
         }
+
+
     }
 }
